@@ -1,0 +1,90 @@
+.our-plan{
+    padding: 15px;
+    text-align: center;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px 0px;
+    position: relative;
+    border: 1px solid #CCC;
+    
+
+    &::after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 10px;
+        content: ' ';
+        background-image: url('assets/imgs/gradiant-bar.png');
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        border-radius: 20px 0px 0px 0px;
+    }
+
+    &__title{
+        color: $main_color;
+        text-transform: capitalize;
+        font-size: 18px;
+    }
+
+    &__price{
+        font-size: 64px;
+        font-weight: 700;
+        margin-bottom: 0;
+        font-style: italic;
+    }
+
+    &__currency{
+        font-weight: 700;
+        font-size: 23px;
+        align-self: flex-end;
+        margin-bottom: 3px;
+    }
+
+    &__price-currency{
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        gap: 10px;
+        margin-top: 16px;
+    }
+
+    &__range{
+        margin-bottom: 30px;
+    }
+
+    &__custom-plan-title{
+        font-size: 12px;
+        margin-bottom: 17px;
+        margin-top: 15px;
+    }
+    &__custom-plan-input{
+        margin: 0 15px;
+        margin-bottom: 5px;
+        &:last-of-type{
+            margin-bottom: 14px;
+        }
+    }
+
+    &__plan-btn{
+        background-color: $main_color;
+        color: #FFF;
+        border: none;
+        padding: 9px 15px;
+        font-family: 'MainFont';
+        font-weight: 600;
+        font-size: 17px;
+        margin-top: 9px;
+        width: 90%;
+    }
+
+    &__plan-footer{
+        font-size: 9px;
+        color: #b0a3a3;
+        margin-top: 22px;
+        display: block;
+        margin-bottom: 0;
+        padding: 0 10px;
+    }
+}

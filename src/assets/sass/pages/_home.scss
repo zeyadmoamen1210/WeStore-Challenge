@@ -1,0 +1,118 @@
+.home-page{
+    &__title{
+        text-align: center;
+        font-size: 37px;
+        font-weight: 700;
+        font-family: 'MainFont';
+        @media screen and (max-width:620px) {
+            font-size: 22px;
+        }
+    }
+    &__features{
+        margin: 50px 0 0;
+        display: grid;
+        gap: 30px 15px;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+        @media screen and (max-width:620px) {
+            margin: 50px 0 0 43px;
+        }
+        
+    }
+    &__feat{
+        text-align: center;
+        &:not(:last-of-type){
+            border-right: 1px solid #7B8795;
+        }
+        @media screen and (max-width:620px) {
+            text-align: center;
+            display: flex;
+            border-right: none !important;
+            gap: 14px;
+            align-items: center;
+        }
+
+        @media screen and (max-width:775px){
+            border: none !important;
+        }
+    }
+    &__feat-title{
+        text-align: center;
+        margin-top: 10px;
+        color: $main_color;
+        font-family: 'MainFont';
+        font-size: 24px;
+        @media screen and (max-width:620px) {
+            font-size: 20px;
+        }
+    }
+    &__feat-icon{
+        width: 60px;
+        @media screen and (max-width:620px) {
+            width: 30px;
+        }
+    }
+
+    &__plans{
+        margin: 50px 0 0;
+        display: grid;
+        gap: 25px;
+        grid-template-columns: repeat(auto-fit, minmax(289px, 1fr));
+        margin-bottom: 100px;
+
+        @media screen and (max-width:620px) {
+            display: none !important;
+        }
+        
+    }
+
+    &__plan-features{
+        margin-top: 39px;
+        list-style: none;
+        padding: 0 17px;
+        line-height: 2.6;
+    }
+
+    li{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        &:last-of-type{
+            
+        }
+        &.home-page__custom-plan{
+            gap: 5px;
+            font-size: 13px;
+            color: #8d8989;
+        }
+    }
+
+    &__custom-plan-ul{
+        margin-top: 35px;
+    }
+
+    &__feature{
+        flex: 1;
+        display: flex;
+        justify-content: space-between;
+
+        
+        
+        span{
+            &:first-of-type{
+                font-weight: bold;
+                font-size: 13px;
+            }
+            &:last-of-type{
+                color: #777676ad;
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__plan-icon{
+        width: 16px;
+        height: 18px;
+        object-fit: none;
+    }
+}

@@ -1,0 +1,228 @@
+.plan-page{
+    margin-bottom: 50px;
+    &__title{
+      text-align: center;
+      font-size: 37px;
+      font-weight: 700;
+      font-family: 'MainFont';
+
+      @media screen and (max-width: 768px) {
+        font-size: 25px;
+        }
+    }
+    &__note{
+      color: $main_color;
+      font-size: 22px;
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 35px;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 0;
+    }
+
+    }
+    &__submit-the-plan{
+        background: #FFFFFF;
+        border: 1px solid #00000087;
+        box-sizing: border-box;
+        padding: 44px 29px;
+        border-radius: 5px;
+        
+
+        @media screen and (min-width: 1300px) {
+            width: 90%;
+            margin: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 22px 22px 22px 23px;
+            font-size: 8px;
+            margin: 25px;
+            >h6{
+                font-size: 11px;
+            }
+        }
+    }
+    &__form-title{
+        color: $main_color;
+        font-size: 25px;
+        margin-bottom: 30px;
+        font-weight: 700;
+        text-align: center;
+        text-transform: capitalize;
+    }
+    &__input{
+        margin-bottom: 25px;
+    }
+    &__submit {
+        background-color: #F12763;
+        color: #FFF;
+        padding: 16px 11px;
+        border: none;
+        width: 100%;
+        font-family: 'MainFont';
+        font-weight: 700;
+        font-size: 22px;
+        margin-top: 15px;
+        border-radius: 5px;
+    }
+
+    input[type="text"]{
+        padding: 18px;
+        border: 1px solid #0C1922;
+        &::placeholder{
+            color: #0C1922;
+        }
+    }
+
+    &__invoice{
+        padding: 22px 15px 22px 56px;
+        border: 1px solid #E5E5E5;
+        /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+        box-shadow: 1px 1px 1px 1px #EEE;
+        overflow: hidden;
+        
+        @media screen and (min-width: 1300px) {
+            width: 95%;
+            
+            margin: auto;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 22px 22px 22px 23px;
+            font-size: 8px;
+            margin: 25px;
+            >h6{
+                font-size: 11px;
+            }
+        }
+
+
+    }
+
+    &__logo{
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 136px;
+            height: 51px;
+        }
+    }
+
+    &__invoice-title{
+        color: $main_color;
+        font-size: 25px;
+        margin-bottom: 35px;
+        font-family: 'MainFont';
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-top: 43px;
+
+        @media screen and (max-width: 768px) {
+            margin: 15px 0;
+            font-size: 20px;
+            margin-top: 0;
+        }
+    }
+
+
+    table.main-table{
+        width: 100%;
+        margin-top: 35px;
+        border-bottom: 1px solid #c7c7c7;
+        thead{
+                border-bottom: 1px solid #c7c7c7;
+                td{
+                    font-weight: bold;
+                }
+        }
+        tr{
+            
+            td{
+                padding: 3px 0px;
+                &:first-of-type{
+                    border-right: 1px solid #c7c7c7;
+                }
+                &:nth-of-type(2){
+                    padding-left: 15px;
+                    font-weight: 700;
+                }
+            }
+            &:nth-child(2n+3){
+                td{
+                    &:first-of-type{
+                        background-color: #eeeeee8f;
+                    }
+                }
+            }
+        }
+    }
+
+    table.small-table{
+        margin-top: 5px;
+        margin-bottom: 25px;
+        float: right;
+        width: 100%;
+        tr{
+            td{
+                &:first-of-type{
+                    border-right: 1px solid #c7c7c7;
+                    text-align: right;
+                    font-weight: bold;
+                    padding: 0 10px !important;
+                }
+                &:last-of-type{
+                    width: 110px ;
+                }
+            }
+
+            &:nth-child(2n+2){
+                td{
+                    padding: 5px;
+                    
+                    &:last-of-type{
+                        background-color: #eeeeee8f;
+                    }
+                }
+            }
+        }
+    }
+
+    &__footer{
+        margin-top: 50px;
+        h6{
+            font-size: 12px;
+            margin-bottom: 20px;
+
+        }
+        p{
+            font-size: 12px;
+            font-weight: 500;
+
+            @media screen and (max-width: 768px) {
+                font-size: 7px;
+            }
+
+        }
+
+        @media screen and (max-width: 768px) {
+            
+            margin-top: 24px;
+            h6{
+                font-size: 8px;
+                margin-bottom: 12px;
+            }
+        }
+        
+    }
+    .border-right{
+        border-right: 0.6px solid #f127638a;
+      
+        
+    }
+    .border-left{
+        border-left: 0.6px solid #f127638a;
+        
+    }
+  }
