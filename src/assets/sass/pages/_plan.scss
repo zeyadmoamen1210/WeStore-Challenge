@@ -14,7 +14,7 @@
       color: $main_color;
       font-size: 22px;
       text-align: center;
-      margin-top: 15px;
+      margin-top: 25px;
       margin-bottom: 35px;
 
       @media screen and (max-width: 768px) {
@@ -37,7 +37,7 @@
 
         @media screen and (max-width: 768px) {
             padding: 22px 22px 22px 23px;
-            font-size: 8px;
+            font-size: 14px;
             margin: 25px;
             >h6{
                 font-size: 11px;
@@ -46,11 +46,16 @@
     }
     &__form-title{
         color: $main_color;
-        font-size: 25px;
+        font-size: 22px;
         margin-bottom: 30px;
         font-weight: 700;
         text-align: center;
         text-transform: capitalize;
+    }
+    .order-sm-4{
+        @media screen and (max-width: 768px) {
+            margin-top: 0 !important;
+        }
     }
     &__input{
         margin-bottom: 25px;
@@ -217,12 +222,12 @@
         
     }
     .border-right{
-        border-right: 0.6px solid #f127638a;
+        border-right: 0.6px solid #f127634a;
       
         
     }
     .border-left{
-        border-left: 0.6px solid #f127638a;
+        border-left: 0.6px solid #f127634a;
         
     }
   }

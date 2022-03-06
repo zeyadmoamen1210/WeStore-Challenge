@@ -15,7 +15,8 @@
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
         @media screen and (max-width:620px) {
-            margin: 50px 0 0 43px;
+            margin: 34px 0 0 44px;
+            gap: 10px 15px;
         }
         
     }
@@ -43,13 +44,14 @@
         font-family: 'MainFont';
         font-size: 24px;
         @media screen and (max-width:620px) {
-            font-size: 20px;
+            font-size: 15px;
+            font-weight: 600;
         }
     }
     &__feat-icon{
         width: 60px;
         @media screen and (max-width:620px) {
-            width: 30px;
+            width: 45px;
         }
     }
 
