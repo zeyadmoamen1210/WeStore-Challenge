@@ -1,6 +1,6 @@
 <template>
   <div class="westore-logo">
-    <img src="@/assets/imgs/logo.svg" alt="">
+    <img @click="$router.push('/')" src="@/assets/imgs/logo.svg" alt="">
   </div>
 </template>
 
